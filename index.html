@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser OS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.26.1/full/pyodide.js"></script>
+</head>
+<body>
+    <div id="desktop"></div>
+
+    <div id="taskbar">
+        <button id="start-btn">⚙️START</button>
+        <div id="taskbar-apps" class="taskbar-apps"></div>
+        <div id="active-apps"></div>
+        <div id="clock">00:00</div>
+            <div id="calendar-widget" class="calendar-window">
+        <div class="calendar-header">
+            <button id="cal-prev-btn" style="background:transparent; border:none; color:#00adb5; cursor:pointer; font-size:16px; font-weight:bold;"><</button>
+            <div id="calendar-month-year"></div>
+            <button id="cal-next-btn" style="background:transparent; border:none; color:#00adb5; cursor:pointer; font-size:16px; font-weight:bold;">></button>
+        </div>
+        <div class="calendar-weekdays">
+            <div>Երկ</div><div>Երք</div><div>Չոր</div><div>Հնգ</div><div>Ուրբ</div><div>Շբթ</div><div>Կիր</div>
+        </div>
+        <div class="calendar-days" id="calendar-days-container"></div>
+       </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
